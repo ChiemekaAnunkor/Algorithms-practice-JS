@@ -9,7 +9,10 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
-    if ( stringA === stringB){
+    
+    const results = stringA.toLowerCase().split(" ").reverse().join(" ")
+    if ( stringA === results){
+
 
         return true
     }else {
